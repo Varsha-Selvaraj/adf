@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "sampleADF00"
+		},
+		"LS_ABLB_Excel_Customer_connectionString": {
+			"value": ""
+		},
+		"LS_ABLB_Sales_connectionString": {
+			"value": ""
+		},
+		"LS_ABLB_Sales_Meta_connectionString": {
+			"value": ""
+		},
+		"LS_ASQL_Users_password": {
+			"value": ""
+		},
+		"ALS_API_Users_properties_typeProperties_url": {
+			"value": "https://jsonplaceholder.typicode.com/users"
+		},
+		"LS_ASQL_Users_properties_typeProperties_server": {
+			"value": "sampleserver00.database.windows.net"
+		},
+		"LS_ASQL_Users_properties_typeProperties_database": {
+			"value": "sampleDB00"
+		},
+		"LS_ASQL_Users_properties_typeProperties_userName": {
+			"value": "varsha"
+		}
+	}
+}
