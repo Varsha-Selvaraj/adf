@@ -21,7 +21,7 @@
 				},
 				"container": "sales-container"
 			},
-			"columnDelimiter": "Comma (,)",
+			"columnDelimiter": ",",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""

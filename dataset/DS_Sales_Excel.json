@@ -5,27 +5,34 @@
 			"referenceName": "LS_ABLB_Excel_Customer",
 			"type": "LinkedServiceReference"
 		},
-		"parameters": {
-			"file_name": {
-				"type": "String"
-			}
-		},
 		"annotations": [],
 		"type": "Excel",
 		"typeProperties": {
-			"sheetName": {
-				"value": "@dataset().file_name",
-				"type": "Expression"
-			},
+			"sheetName": "Data",
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": {
-					"value": "@dataset().file_name",
-					"type": "Expression"
-				},
+				"fileName": "Customer.xlsx",
 				"container": "sales-excel"
-			}
+			},
+			"range": "A4:E10000",
+			"firstRowAsHeader": true
 		},
-		"schema": []
+		"schema": [
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			}
+		]
 	}
 }

@@ -163,10 +163,7 @@
 										"inputs": [
 											{
 												"referenceName": "DS_Sales_Excel",
-												"type": "DatasetReference",
-												"parameters": {
-													"file_name": "@item().name"
-												}
+												"type": "DatasetReference"
 											}
 										],
 										"outputs": [
