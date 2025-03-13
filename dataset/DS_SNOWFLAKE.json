@@ -5,6 +5,11 @@
 			"referenceName": "LS_SNOWFLAKE_HEALTHCARE",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"snow_table": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "SnowflakeV2Table",
 		"schema": [
@@ -133,7 +138,10 @@
 		],
 		"typeProperties": {
 			"schema": "STAGE",
-			"table": "COUNTRY_REGION"
+			"table": {
+				"value": "@dataset().snow_table",
+				"type": "Expression"
+			}
 		}
 	}
 }
