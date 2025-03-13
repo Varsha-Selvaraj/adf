@@ -1,0 +1,26 @@
+{
+	"name": "DS_SQL_SERVER",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQL_SERVER",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "customer_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "country",
+				"type": "nvarchar"
+			},
+			{
+				"name": "region",
+				"type": "nvarchar"
+			}
+		]
+	}
+}
